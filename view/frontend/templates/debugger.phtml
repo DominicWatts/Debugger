@@ -1,0 +1,38 @@
+<?php
+/**
+ * @var $block \Xigen\Debugger\Block\Debugger
+ */
+?>
+<?php if ($routes = $block->displayRoutes()): ?>
+    <table style="width:100%; background-color: #BCB;">
+        <thead>
+            <tr>
+                <th><?= $block->escapeHtml(__("Route Information")); ?></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($routes as $key => $route): ?>
+            <tr>
+                <td><?= $block->escapeHtml($key); ?></td>
+                <td><?= $block->escapeHtml($route); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        <tbody>
+    </table>
+<?php endif; ?>
+<?php if ($handles = $block->displayHandles()): ?>
+    <table style="width:100%; background-color: #CCC;">
+        <thead>
+            <tr>
+                <th><?= $block->escapeHtml(__("Layout handles")); ?></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($handles as $handle): ?>
+            <tr>
+            <td><?= $block->escapeHtml($handle); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        <tbody>
+    </table>
+<?php endif; ?>

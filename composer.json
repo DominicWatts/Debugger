@@ -1,0 +1,26 @@
+{
+    "name": "dominicwatts/debugger",
+    "description": "Magento 2 simple debugger - debug routes and handles",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dominic Xigen",
+            "email": "dominic@xigen.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/framework": "*",
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Xigen\\Debugger\\": ""
+        }
+    }
+}
