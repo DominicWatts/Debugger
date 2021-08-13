@@ -87,7 +87,7 @@ class Debugger extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * Display route
+     * Display handles
      * @return array
      */
     public function displayHandles()
