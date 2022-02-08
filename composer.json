@@ -3,7 +3,7 @@
     "description": "Magento 2 simple debugger - debug routes and handles",
     "type": "magento2-module",
     "license": "GPL-3.0",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Dominic Xigen",
