@@ -69,7 +69,7 @@ class Debugger extends \Magento\Framework\View\Element\Template
 
     /**
      * Display route
-     * @return bool
+     * @return array
      */
     public function displayRoutes()
     {
@@ -87,8 +87,8 @@ class Debugger extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * Display route
-     * @return bool
+     * Display handles
+     * @return array
      */
     public function displayHandles()
     {
