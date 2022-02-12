@@ -1,0 +1,9 @@
+name: phpinsights
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: phpinsights
+      run: docker run --rm -v $PWD:/app nunomaduro/phpinsights
